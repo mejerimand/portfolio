@@ -5,9 +5,9 @@
 }
 
 :root {
+    font-size: 14px;
     --sidebar-width: 265px;
     --header-height: 6rem;
-    --orange: #e87722;
     --purple: #6b2fa0;
     --purple-light: #cfa8f5;
     --text: #111111;
@@ -89,7 +89,7 @@ body {
 
 .nav-item:hover,
 .nav-item.hover {
-    color: var(--orange);
+    color: var(--purple-light);
 }
 
 .nav-item.active {
@@ -121,7 +121,7 @@ body {
 
 .project-nav-item:hover,
 .project-nav-item.hover {
-    color: var(--orange);
+    color: var(--purple-light);
 }
 
 .project-nav-item.active {
@@ -172,14 +172,14 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(232, 119, 34, 0);
+    background: rgba(107, 47, 160, 0);
     transition: background var(--transition);
     pointer-events: none;
 }
 
 .grid-cell:hover .grid-cell-image-wrapper::after,
 .grid-cell.hover .grid-cell-image-wrapper::after {
-    background: rgba(232, 119, 34, 0.18);
+    background: rgba(107, 47, 160, 0.18);
 }
 
 .grid-cell.active .grid-cell-image-wrapper::after {
@@ -203,7 +203,7 @@ body {
 
 .grid-cell:hover .grid-cell-title,
 .grid-cell.hover .grid-cell-title {
-    color: var(--orange);
+    color: var(--purple);
 }
 
 .grid-cell.active .grid-cell-title {
@@ -237,7 +237,7 @@ body {
 }
 
 .detail-arrow:hover {
-    color: var(--orange);
+    color: var(--purple);
 }
 
 .detail-arrow:disabled {
@@ -310,7 +310,7 @@ body {
 }
 
 .text-content a:hover {
-    color: var(--orange);
+    color: var(--purple);
 }
 
 
@@ -348,7 +348,7 @@ body {
 }
 
 #mobile-menu-close:hover {
-    color: var(--orange);
+    color: var(--purple);
 }
 
 #mobile-nav {
@@ -366,7 +366,7 @@ body {
 }
 
 .mobile-nav-item:hover {
-    color: var(--orange);
+    color: var(--purple);
 }
 
 
@@ -403,7 +403,7 @@ body {
     }
 
     #mobile-menu-btn:hover {
-        color: var(--orange);
+        color: var(--purple);
     }
 
     #sidebar {
