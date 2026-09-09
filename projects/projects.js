@@ -1,8 +1,8 @@
 const projects = [
     {
         id: "2023-speculative-tiktok",
-        title: "Designing for Sexual Equality in Denmark",
-        year: "2022 — Internship as Concept Developer",
+        title: "Speculation on the Future of Tech, 2043",
+        year: "2023 — Deep Dive into Speculative Design",
         cover: "projects/2022-peech-internship/card-preview.png"
     },
     {
