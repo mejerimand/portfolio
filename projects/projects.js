@@ -42,6 +42,12 @@ const projects = [
         cover: "projects/2023-speculative-tiktok/speculative-design-newspaper.png"
     },
     {
+        id: "2024-itd",
+        title: "The Future of Tourism??",
+        year: "2024 — Part of the course Interactive Technology Design",
+        cover: "projects/2024-itd/itd-1.png"
+    },
+    {
         id: "2022-bachelor-thesis",
         title: "Designing for Sexual Equality in Denmark",
         year: "2022 — Bachelor's Thesis",
