@@ -296,18 +296,23 @@ body {
 
 .image-row img {
     width: 100%;
+    min-width: 0;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     margin: 0;
 }
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
     margin: 2rem 0;
 }
 
 .image-grid img {
     width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     margin: 0;
 }
 
