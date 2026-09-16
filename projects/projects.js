@@ -24,10 +24,10 @@ const projects = [
         cover: "projects/2025-arcanedesigning/cards-1.jpeg"
     },
     {
-        id: "2023-speculative-tiktok",
-        title: "Exploring the Future of Mobility, 2043",
-        year: "2023 — Part of the course Deep Dive into Speculative Design",
-        cover: "projects/2023-speculative-tiktok/speculative-design-newspaper.png"
+        id: "2022-ddc-vorby",
+        title: "Vorby, 2052 - A Future Where Young People Thrive",
+        year: "2022-2023 — Danish Design Center",
+        cover: "projects/2022-ddc-vorby/vorby-2.jpg"
     },
     { 
         id: "2022-ddc-kl",
@@ -36,10 +36,10 @@ const projects = [
         cover: "projects/2022-ddc-kl/KL-7.jpg"
     },
     {
-        id: "2022-ddc-vorby",
-        title: "Vorby, 2052 - A Future where Young People Thrive",
-        year: "2022-2023 — Danish Design Center",
-        cover: "projects/2022-ddc-vorby/vorby-2.jpg"
+        id: "2023-speculative-tiktok",
+        title: "Exploring the Future of Mobility, 2043",
+        year: "2023 — Part of the course Deep Dive into Speculative Design",
+        cover: "projects/2023-speculative-tiktok/speculative-design-newspaper.png"
     },
     {
         id: "2022-bachelor-thesis",
