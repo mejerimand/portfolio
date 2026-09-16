@@ -15,13 +15,13 @@ const projects = [
         id: "2025-oceanspirits",
         title: "A Ritual for Living Together on a Damaged Planet",
         year: "2025",
-        cover: "projects/2025-oceanspirits/xx.png"
+        cover: "projects/2025-oceanspirits/jellyfish-1.jpg"
     },
     {
         id: "2025-arcanedesigning",
-        title: "Arcane Designing Cards - Prompting the Imagination",
+        title: "Arcane Designing Cards - Prompts for the Imagination",
         year: "2025",
-        cover: "projects/2025-arcanedesigning/xx.png"
+        cover: "projects/2025-arcanedesigning/cards-1.jpeg"
     },
     {
         id: "2023-speculative-tiktok",
