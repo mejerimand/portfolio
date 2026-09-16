@@ -42,7 +42,7 @@ async function openProject(index) {
     bodyEl.className = 'detail-body';
 
     try {
-        const res = await fetch(`projects/${project.id}/content.html`);
+        const res = await fetch(`projects/${project.id}/content.html`, { cache: 'no-cache' });
         if (!res.ok) throw new Error();
         bodyEl.innerHTML = await res.text();
     } catch {
@@ -67,7 +67,7 @@ async function openStaticView(viewId) {
     const contentEl = document.getElementById(viewId + '-content');
     if (contentEl && !contentEl.dataset.loaded) {
         try {
-            const res = await fetch(viewId + '.html');
+            const res = await fetch(viewId + '.html', { cache: 'no-cache' });
             if (!res.ok) throw new Error();
             contentEl.innerHTML = await res.text();
             contentEl.dataset.loaded = '1';
