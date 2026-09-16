@@ -1,5 +1,29 @@
 const projects = [
     {
+        id: "2025-fairies",
+        title: "The Feral Cyborg Fairies",
+        year: "2025",
+        cover: "projects/2025-fairies/fairies-1.jpg"
+    },
+    {
+        id: "2025-witchwalk",
+        title: "Witchwalk",
+        year: "2025",
+        cover: "projects/2025-witchwalk/xx.png"
+    },
+    {
+        id: "2025-oceanspirits",
+        title: "A Ritual for Ocean Spirits",
+        year: "2025",
+        cover: "projects/2025-oceanspirits/xx.png"
+    },
+    {
+        id: "2025-arcanedesigning",
+        title: "Arcane Design",
+        year: "2025",
+        cover: "projects/2025-arcanedesigning/xx.png"
+    },
+    {
         id: "2023-speculative-tiktok",
         title: "The Future of Mobility, 2043",
         year: "2023 — Deep Dive into Speculative Design",
