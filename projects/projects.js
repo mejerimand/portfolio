@@ -7,37 +7,37 @@ const projects = [
     },
     {
         id: "2025-witchwalk",
-        title: "Witchwalk",
+        title: "Witch walks",
         year: "2025",
         cover: "projects/2025-witchwalk/xx.png"
     },
     {
         id: "2025-oceanspirits",
-        title: "A Ritual for Ocean Spirits",
+        title: "A Ritual for Living Together on a Damaged Planet",
         year: "2025",
         cover: "projects/2025-oceanspirits/xx.png"
     },
     {
         id: "2025-arcanedesigning",
-        title: "Arcane Design",
+        title: "Arcane Designing Cards - Prompting the Imagination",
         year: "2025",
         cover: "projects/2025-arcanedesigning/xx.png"
     },
     {
         id: "2023-speculative-tiktok",
-        title: "The Future of Mobility, 2043",
+        title: "Exploring the Future of Mobility, 2043",
         year: "2023 — Deep Dive into Speculative Design",
         cover: "projects/2023-speculative-tiktok/speculative-design-newspaper.png"
     },
     { 
         id: "2022-ddc-kl",
-        title: "Future of Welfare, 2050",
+        title: "Four Futures of Welfare, 2050",
         year: "2022 — Danish Design Center",
         cover: "projects/2022-ddc-kl/KL-7.jpg"
     },
     {
         id: "2022-ddc-vorby",
-        title: "Vorby, 2052",
+        title: "Vorby, 2052 - A Future where Young People Thrive",
         year: "2022-2023 — Danish Design Center",
         cover: "projects/2022-ddc-vorby/vorby-2.jpg"
     },
