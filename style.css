@@ -278,6 +278,39 @@ body {
     margin: 2rem 0;
 }
 
+.detail-body h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.image-row {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.image-row img {
+    width: 100%;
+    margin: 0;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.image-grid img {
+    width: 100%;
+    margin: 0;
+}
+
 
 /* ─── ABOUT & PUBLICATIONS ────────────────────────────── */
 
@@ -431,6 +464,14 @@ body {
 
     .text-content {
         padding-top: 2rem;
+    }
+
+    .image-row {
+        flex-direction: column;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
     }
 
 }
