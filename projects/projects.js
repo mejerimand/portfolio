@@ -26,7 +26,7 @@ const projects = [
     {
         id: "2023-speculative-tiktok",
         title: "Exploring the Future of Mobility, 2043",
-        year: "2023 — Deep Dive into Speculative Design",
+        year: "2023 — Part of the course Deep Dive into Speculative Design",
         cover: "projects/2023-speculative-tiktok/speculative-design-newspaper.png"
     },
     { 
