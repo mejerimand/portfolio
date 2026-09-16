@@ -7,7 +7,7 @@ const projects = [
     },
     {
         id: "2025-witchwalk",
-        title: "Witch walks",
+        title: "Witch Walks",
         year: "2025",
         cover: "projects/2025-witchwalk/xx.png"
     },

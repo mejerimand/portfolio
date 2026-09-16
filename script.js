@@ -19,6 +19,38 @@ function closeMobileMenu() {
     document.getElementById('mobile-menu').classList.remove('open');
 }
 
+function initCarousels(container) {
+    container.querySelectorAll('.carousel').forEach(carousel => {
+        const images = Array.from(carousel.querySelectorAll('.carousel-track img'));
+        const dotsWrap = carousel.querySelector('.carousel-dots');
+        let index = 0;
+
+        images.forEach((img, i) => {
+            const dot = document.createElement('button');
+            dot.className = 'carousel-dot';
+            dot.setAttribute('aria-label', `Go to image ${i + 1}`);
+            dot.addEventListener('click', () => goTo(i));
+            dotsWrap.appendChild(dot);
+        });
+        const dots = Array.from(dotsWrap.children);
+
+        function update() {
+            images.forEach((img, i) => img.classList.toggle('active', i === index));
+            dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+        }
+
+        function goTo(i) {
+            index = (i + images.length) % images.length;
+            update();
+        }
+
+        carousel.querySelector('.carousel-prev').addEventListener('click', () => goTo(index - 1));
+        carousel.querySelector('.carousel-next').addEventListener('click', () => goTo(index + 1));
+
+        update();
+    });
+}
+
 async function openProject(index) {
     const project = projects[index];
     currentProjectIndex = index;
@@ -45,6 +77,7 @@ async function openProject(index) {
         const res = await fetch(`projects/${project.id}/content.html`, { cache: 'no-cache' });
         if (!res.ok) throw new Error();
         bodyEl.innerHTML = await res.text();
+        initCarousels(bodyEl);
     } catch {
         bodyEl.innerHTML = '<p>Content could not be loaded.</p>';
     }
