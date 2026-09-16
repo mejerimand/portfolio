@@ -8,13 +8,13 @@ const projects = [
     { 
         id: "2022-ddc-kl",
         title: "Future of Welfare, 2050",
-        year: "2022 — Project Assistant at Danish Design Centre",
+        year: "2022 — Danish Design Centre",
         cover: "projects/2022-ddc-kl/KL-7.jpg"
     },
     {
-        id: "2022-ddc-internship",
+        id: "2022-ddc-vorby",
         title: "Vorby",
-        year: "2022–-2023 — Project Assistant at Danish Design Centre",
+        year: "2022–-2023 — Danish Design Centre",
         cover: "projects/2022-ddc-vorby/vorby-2.jpg"
     },
     {
