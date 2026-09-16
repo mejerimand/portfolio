@@ -31,9 +31,9 @@ const projects = [
     },
     { 
         id: "2022-ddc-kl",
-        title: "Four Futures of Welfare, 2050",
+        title: "Four Scenarios of Welfare in Denmark 2050",
         year: "2022 — Danish Design Center",
-        cover: "projects/2022-ddc-kl/KL-7.jpg"
+        cover: "projects/2022-ddc-kl/KL_cover.jpg"
     },
     {
         id: "2023-speculative-tiktok",
