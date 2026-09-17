@@ -20,7 +20,7 @@ const projects = [
     {
         id: "2025-arcanedesigning",
         title: "Arcane Designing Cards - Prompts for the Imagination",
-        year: "2025",
+        year: "2025 - ThingsCon",
         cover: "projects/2025-arcanedesigning/cards-1.jpeg"
     },
     {
@@ -43,7 +43,7 @@ const projects = [
     },
     {
         id: "2024-itd",
-        title: "DestinAItion - A Future of Regenerative Tourism?",
+        title: "DestinAItion - A Speculation on Regenerative Tourism",
         year: "2024 — Part of the course Interactive Technology Design, with Hotelschool the Hauge as client",
         cover: "projects/2024-itd/itd-1.png"
     },

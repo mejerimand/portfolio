@@ -278,6 +278,23 @@ body {
     margin: 2rem 0;
 }
 
+.detail-body img.float-left,
+.detail-body img.float-right {
+    width: 45%;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.detail-body img.float-left {
+    float: left;
+    margin-right: 1.5rem;
+}
+
+.detail-body img.float-right {
+    float: right;
+    margin-left: 1.5rem;
+}
+
 .detail-body h2 {
     font-size: 1rem;
     font-weight: 700;
@@ -286,12 +303,14 @@ body {
     color: var(--text);
     margin-top: 2.5rem;
     margin-bottom: 1rem;
+    clear: both;
 }
 
 .detail-body hr {
     border: none;
     border-top: 1px solid #dddddd;
     margin: 2.5rem 0;
+    clear: both;
 }
 
 .video-embed {
@@ -392,6 +411,24 @@ body {
 
 .carousel-dot.active {
     background: var(--purple);
+}
+
+.carousel.carousel-natural {
+    aspect-ratio: auto;
+}
+
+.carousel.carousel-natural .carousel-track img {
+    position: static;
+    display: none;
+    width: 100%;
+    height: auto;
+    object-fit: unset;
+    opacity: 1;
+    transition: none;
+}
+
+.carousel.carousel-natural .carousel-track img.active {
+    display: block;
 }
 
 .image-row {
@@ -583,6 +620,13 @@ body {
 
     .image-grid {
         grid-template-columns: 1fr;
+    }
+
+    .detail-body img.float-left,
+    .detail-body img.float-right {
+        float: none;
+        width: 100%;
+        margin: 2rem 0;
     }
 
 }
