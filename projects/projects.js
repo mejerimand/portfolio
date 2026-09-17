@@ -9,7 +9,7 @@ const projects = [
         id: "2025-witchwalk",
         title: "Witch Walks",
         year: "2025",
-        cover: "projects/2025-witchwalk/xx.png"
+        cover: "projects/2025-witchwalk/witchwalk-1.jpg"
     },
     {
         id: "2025-oceanspirits",
@@ -43,8 +43,8 @@ const projects = [
     },
     {
         id: "2024-itd",
-        title: "The Future of Tourism??",
-        year: "2024 — Part of the course Interactive Technology Design",
+        title: "DestinAItion - A Future of Regenerative Tourism?",
+        year: "2024 — Part of the course Interactive Technology Design, with Hotelschool the Hauge as client",
         cover: "projects/2024-itd/itd-1.png"
     },
     {
