@@ -278,6 +278,12 @@ body {
     margin: 2rem 0;
 }
 
+.detail-body img.oversized {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .detail-body img.float-left,
 .detail-body img.float-right {
     width: 45%;
