@@ -9,7 +9,7 @@ const projects = [
         id: "2025-witchwalk",
         title: "Witch Walks",
         year: "2025 - Part of my Master's Thesis",
-        cover: "projects/2025-witchwalk/witchwalk-1.jpg"
+        cover: "projects/2025-witchwalk/witchwalk_6.jpg"
     },
     {
         id: "2025-oceanspirits",
