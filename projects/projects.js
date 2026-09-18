@@ -27,7 +27,7 @@ const projects = [
         id: "2022-ddc-vorby",
         title: "Vorby, 2052 - A Future Where Young People Thrive",
         year: "2022-2023 — Danish Design Center",
-        cover: "projects/2022-ddc-vorby/vorby-2.jpg"
+        cover: "projects/2022-ddc-vorby/vorby_cover.jpg"
     },
     { 
         id: "2022-ddc-kl",
