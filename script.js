@@ -1,5 +1,50 @@
 let currentProjectIndex = -1;
 
+function navigateTo(path) {
+    if (location.pathname !== path) {
+        history.pushState(null, '', path);
+    }
+    renderRoute();
+}
+
+function renderRoute() {
+    const slug = location.pathname.replace(/^\/|\/$/g, '');
+
+    if (slug === '') {
+        clearActive();
+        showView('grid');
+        window.scrollTo(0, 0);
+        document.title = 'Maja Riemann';
+        return;
+    }
+
+    if (slug === 'about') {
+        openStaticView('about');
+        document.title = 'About — Maja Riemann';
+        return;
+    }
+
+    if (slug === 'publications') {
+        openStaticView('publications');
+        document.title = 'Publications — Maja Riemann';
+        return;
+    }
+
+    const index = projects.findIndex(p => p.id === slug);
+    if (index !== -1) {
+        openProject(index);
+        document.title = `${projects[index].title} — Maja Riemann`;
+        return;
+    }
+
+    // Unknown path: fall back to the grid rather than showing nothing.
+    history.replaceState(null, '', '/');
+    clearActive();
+    showView('grid');
+    window.scrollTo(0, 0);
+    document.title = 'Maja Riemann';
+}
+
 function showView(id) {
     document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
     document.getElementById('view-' + id).classList.add('active');
@@ -128,7 +173,7 @@ function buildSidebar() {
         item.dataset.id = project.id;
         item.textContent = project.title.toUpperCase();
 
-        item.addEventListener('click', e => { e.preventDefault(); openProject(index); });
+        item.addEventListener('click', e => { e.preventDefault(); navigateTo('/' + project.id); });
         item.addEventListener('mouseenter', () => setProjectHover(project.id, true));
         item.addEventListener('mouseleave', () => setProjectHover(project.id, false));
 
@@ -160,7 +205,7 @@ function buildGrid() {
         cell.appendChild(imgWrapper);
         cell.appendChild(titleEl);
 
-        cell.addEventListener('click', () => openProject(index));
+        cell.addEventListener('click', () => navigateTo('/' + project.id));
         cell.addEventListener('mouseenter', () => setProjectHover(project.id, true));
         cell.addEventListener('mouseleave', () => setProjectHover(project.id, false));
 
@@ -173,30 +218,30 @@ document.addEventListener('DOMContentLoaded', () => {
     buildGrid();
 
     window.addEventListener('scroll', updateHeaderTransparency);
+    window.addEventListener('popstate', renderRoute);
+    renderRoute();
 
     // Desktop nav
     document.getElementById('nav-about').addEventListener('click', e => {
         e.preventDefault();
-        openStaticView('about');
+        navigateTo('/about');
     });
 
     document.getElementById('nav-publications').addEventListener('click', e => {
         e.preventDefault();
-        openStaticView('publications');
+        navigateTo('/publications');
     });
 
     document.getElementById('btn-prev').addEventListener('click', () => {
-        if (currentProjectIndex > 0) openProject(currentProjectIndex - 1);
+        if (currentProjectIndex > 0) navigateTo('/' + projects[currentProjectIndex - 1].id);
     });
 
     document.getElementById('btn-next').addEventListener('click', () => {
-        if (currentProjectIndex < projects.length - 1) openProject(currentProjectIndex + 1);
+        if (currentProjectIndex < projects.length - 1) navigateTo('/' + projects[currentProjectIndex + 1].id);
     });
 
     document.getElementById('site-name').addEventListener('click', () => {
-        clearActive();
-        showView('grid');
-        window.scrollTo(0, 0);
+        navigateTo('/');
     });
 
     // Mobile menu
@@ -209,20 +254,18 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('mobile-nav-home').addEventListener('click', e => {
         e.preventDefault();
         closeMobileMenu();
-        clearActive();
-        showView('grid');
-        window.scrollTo(0, 0);
+        navigateTo('/');
     });
 
     document.getElementById('mobile-nav-about').addEventListener('click', e => {
         e.preventDefault();
         closeMobileMenu();
-        openStaticView('about');
+        navigateTo('/about');
     });
 
     document.getElementById('mobile-nav-publications').addEventListener('click', e => {
         e.preventDefault();
         closeMobileMenu();
-        openStaticView('publications');
+        navigateTo('/publications');
     });
 });
