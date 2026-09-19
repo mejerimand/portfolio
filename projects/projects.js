@@ -30,10 +30,10 @@ const projects = [
         cover: "projects/2022-ddc-vorby/vorby_cover.jpg"
     },
     { 
-        id: "2022-ddc-kl",
+        id: "2023-ddc-kl",
         title: "Four Scenarios of Welfare in Denmark 2050",
         year: "2023 — Danish Design Center",
-        cover: "projects/2022-ddc-kl/KL_cover.jpg"
+        cover: "projects/2023-ddc-kl/KL_cover.jpg"
     },
     {
         id: "2023-speculative-tiktok",
