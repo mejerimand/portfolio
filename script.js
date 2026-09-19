@@ -3,6 +3,12 @@ let currentProjectIndex = -1;
 function showView(id) {
     document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
     document.getElementById('view-' + id).classList.add('active');
+    updateHeaderTransparency();
+}
+
+function updateHeaderTransparency() {
+    const isAboutAtTop = document.getElementById('view-about').classList.contains('active') && window.scrollY < 50;
+    document.getElementById('site-header').classList.toggle('transparent', isAboutAtTop);
 }
 
 function clearActive() {
@@ -165,6 +171,8 @@ function buildGrid() {
 document.addEventListener('DOMContentLoaded', () => {
     buildSidebar();
     buildGrid();
+
+    window.addEventListener('scroll', updateHeaderTransparency);
 
     // Desktop nav
     document.getElementById('nav-about').addEventListener('click', e => {
