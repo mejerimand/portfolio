@@ -466,6 +466,33 @@ body {
     margin: 0;
 }
 
+.masonry {
+    column-count: 2;
+    column-gap: 1rem;
+    margin: 2rem 0;
+}
+
+.masonry img {
+    width: 100%;
+    display: block;
+    margin: 0 0 1rem;
+    break-inside: avoid;
+}
+
+@media (min-width: 769px) {
+    .masonry.breakout,
+    .detail-body img.breakout {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: min(calc(100vw - var(--sidebar-width) - 6rem), 1100px);
+    }
+
+    .masonry.breakout {
+        column-count: 3;
+    }
+}
+
 
 /* ─── ABOUT & PUBLICATIONS ────────────────────────────── */
 
@@ -665,6 +692,10 @@ body {
 
     .image-grid {
         grid-template-columns: 1fr;
+    }
+
+    .masonry {
+        column-count: 1;
     }
 
     .detail-body img.float-left,
