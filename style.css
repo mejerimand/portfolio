@@ -140,6 +140,31 @@ body {
     padding: 2.5rem 3rem;
 }
 
+#site-footer {
+    margin-left: var(--sidebar-width);
+    padding: 1.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-top: 1px solid #dddddd;
+}
+
+#site-footer a,
+#site-footer span {
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    color: var(--text);
+}
+
+#site-footer a {
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+#site-footer a:hover {
+    color: var(--purple);
+}
+
 
 /* ─── VIEWS ───────────────────────────────────────────── */
 
@@ -664,6 +689,11 @@ body {
     }
 
     #content {
+        margin-left: 0;
+        padding: 1.25rem;
+    }
+
+    #site-footer {
         margin-left: 0;
         padding: 1.25rem;
     }
