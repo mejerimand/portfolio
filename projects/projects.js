@@ -36,6 +36,12 @@ const projects = [
         cover: "projects/2023-ddc-kl/KL_cover.jpg"
     },
     {
+        id: "2024-dt",
+        title: "A Transition Narrative of Migration",
+        year: "2024 — Course: Designing Transformation",
+        cover: "projects/2024-dt/dt-1.png"
+    },
+    {
         id: "2023-speculative-tiktok",
         title: "Exploring the Future of Mobility, 2043",
         year: "2023 — Course: Deep Dive into Speculative Design",
